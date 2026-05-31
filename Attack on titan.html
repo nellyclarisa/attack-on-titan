@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan - El Camino a la Libertad</title>
+    <style>
+        /* ELEMENTOS DE DISEÑO OBLIGATORIOS: Colores de la serie y organización clara */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Fondo oscuro moderno */
+            color: #f5f5f5;
+        }
+        
+        /* 1. PORTADA O INICIO */
+        header {
+            /* Se utiliza la imagen del escuadrón como fondo principal de la portada */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('escuadrónlevi.webp');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid #d9534f;
+        }
+        h1 { 
+            font-size: 3.2rem; 
+            margin: 0; 
+            color: #d9534f; /* Rojo Titán */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            padding: 0 10px;
+        }
+        header p { 
+            font-size: 1.5rem; 
+            font-style: italic; 
+            color: #f0ad4e; /* Dorado Militar */
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+        
+        /* Secciones ordenadas y legibles */
+        section {
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #2a2a2a;
+            border-left: 5px solid #f0ad4e; /* Detalle dorado en los bordes */
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        h2 { 
+            color: #f0ad4e; 
+            border-bottom: 1px solid #444; 
+            padding-bottom: 10px; 
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        
+        /* Organización visual para las tarjetas de Eren */
+        .poderes-container { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+            margin-top: 20px;
+        }
+        .poder-card { 
+            background: #333; 
+            padding: 20px; 
+            border-radius: 5px; 
+            flex: 1; 
+            min-width: 250px;
+            border: 1px solid #444;
+        }
+        .poder-card h3 {
+            color: #d9534f;
+            margin-top: 0;
+        }
+        
+        /* Diseño adaptable para la Galería con flexbox */
+        .galeria-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .galeria-item {
+            text-align: center;
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            max-width: 220px;
+        }
+        .galeria-grid img { 
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 4px; 
+            transition: transform 0.3s; /* Animación moderada */
+        }
+        .galeria-grid img:hover {
+            transform: scale(1.05);
+        }
+        .galeria-item p {
+            margin: 8px 0 0 0;
+            font-size: 0.95rem;
+            color: #f0ad4e;
+        }
+        
+        /* Botones funcionales obligatorios */
+        .btn-unirse {
+            background-color: #d9534f;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .btn-unirse:hover { 
+            background-color: #c9302c; 
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 25px; 
+            color: #777; 
+            background: #111; 
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. PORTADA O INICIO -->
+    <header id="inicio">
+        <h1>EREN JAEGER: EL CAMINO A LA LIBERTAD</h1>
+        <p>"Si no luchas, no puedes ganar. ¡Pelea! (Tatakae)"</p>
+    </header>
+
+    <!-- 2. SOBRE NOSOTROS (LA HISTORIA) -->
+    <section id="historia">
+        <h2>La Historia y la Lucha por Paradis</h2>
+        <p>Hace más de un siglo, la humanidad fue confinada dentro de tres inmensas murallas para escapar de los Titanes devoradores de hombres. Tras cien años de una falsa paz, la caída del Muro María despierta la furia de Eren Jaeger, quien junto al implacable Capitán Levi Ackerman y la Legión de Reconocimiento, jura destruir a los enemigos que les arrebataron su libertad.</p>
+    </section>
+
+    <!-- 3. PRODUCTOS O SERVICIOS (LOS PODERES DE EREN) -->
+    <section id="eren-poderes">
+        <h2>El Poder del Titán de Ataque (Habilidades)</h2>
+        <p>Conoce las tres facetas fundamentales que convierten a Eren en la mayor esperanza (y peligro) de la humanidad:</p>
+        
+        <div class="poderes-container">
+            <div class="poder-card">
+                <h3>1. Voluntad y Coordenada</h3>
+                <p>Posee el Titán Fundador. Su inquebrantable determinación le permite despertar la "Coordenada", la habilidad mística para controlar ejércitos de titanes con un solo grito.</p>
+            </div>
+            <div class="poder-card">
+                <h3>2. Titán de Ataque</h3>
+                <p>Su forma de 15 metros orientada al combate puro. Cuenta con una fuerza física descomunal, regeneración instantánea y la capacidad de ver los recuerdos de futuros portadores.</p>
+            </div>
+            <div class="poder-card">
+                <h3>3. Endurecimiento Estructural</h3>
+                <p>Tras consumir el suero de la familia Reiss y dominar al Titán Martillo de Guerra, Eren puede crear pilares, armas y armaduras de cristalización pura para el combate a distancia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. GALERÍA (EREN & LEVI) -->
+    <section id="galeria">
+        <h2>Galería de Personajes</h2>
+        <p>Registros visuales con los nombres reales de los personajes:</p>
+        
+        <div class="galeria-grid">
+            <!-- Item 1: Eren Jaeger -->
+            <div class="galeria-item">
+                <img src="LEWC7IX9x_2000x1500__1.jpg" alt="Eren Jaeger">
+                <p>Eren Jaeger</p>
+            </div>
+            
+            <!-- Item 2: Capitán Levi -->
+            <div class="galeria-item">
+                <img src="images.jfif" alt="Capitán Levi">
+                <p>Capitán Levi</p>
+            </div>
+            
+            <!-- Item 3: Titán de Ataque -->
+            <div class="galeria-item">
+                <img src="titándeataque.jfif" alt="Titán de Ataque">
+                <p>Titán de Ataque</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTACTO (RECLUTAMIENTO AL ESCUADRÓN) -->
+    <section id="contacto" style="text-align: center;">
+        <h2>¿Tienes lo necesario para unirte al Escuadrón de Levi?</h2>
+        <p>Bajo las estrictas órdenes del Capitán Levi Ackerman, nuestra misión absoluta es custodiar a Eren Jaeger y guiar su poder para salvar a la humanidad.</p>
+        
+        <p style="margin-top: 20px;">
+            <strong>Cuartel General:</strong> Antiguo Castillo de la Legión, Muralla Rose<br>
+            <strong>Horarios:</strong> Disponibilidad 24/7 en tiempos de expedición<br>
+            <strong>Líder a cargo:</strong> Capitán Levi Ackerman
+        </p>
+        
+        <!-- BOTONES O ENLACES FUNCIONALES OBLIGATORIOS -->
+        <div style="margin-top: 25px;">
+            <a class="btn-unirse" href="mailto:levi.ackerman@paradis.com">Enviar Reporte al Capitán</a>
+            <a class="btn-unirse" href="https://shingeki.tv/" target="_blank">Ver Sitio Oficial de Shingeki</a>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 - Proyecto de Cultura Digital | COBAY | Creado por Nelly Clarisa Ramírez Canul.</p>
+    </footer>
+
+</body>
+</html>
